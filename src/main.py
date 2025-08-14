@@ -30,7 +30,11 @@ SUPPORTED_STAGES = {
     "resolve_taxid_by_blast": {
         "title": "Resolve missing AMP TaxIDs via BLAST alignment",
         "import_path": "src.data.dbAMP.resolve_taxid_by_blast.run_resolve_taxid_by_blast",
-    }
+    },
+    "microbiome_composition": {
+        "title": "Analyze 16S microbiome composition with nf-core/ampliseq",
+        "import_path": "src.data.HMP2.microbiome_composition.run_microbiome_composition",
+    },
 }
 
 
@@ -162,6 +166,33 @@ def main():
         "--resolve_output_path",
         type=str,
         help="Path to save the TaxID-resolved dbAMP output (.csv)",
+    )
+
+    # -------------------- Microbiome Composition Parameters --------------------
+    parser.add_argument(
+        "--microbiome_input_csv",
+        type=str,
+        help="Path to the input sample sheet CSV for nf-core/ampliseq",
+    )
+    parser.add_argument(
+        "--microbiome_metadata",
+        type=str,
+        help="Path to the sample metadata TSV file",
+    )
+    parser.add_argument(
+        "--microbiome_silva_train",
+        type=str,
+        help="Path to custom SILVA training set FASTA file",
+    )
+    parser.add_argument(
+        "--microbiome_silva_species",
+        type=str,
+        help="Path to custom SILVA species FASTA file",
+    )
+    parser.add_argument(
+        "--microbiome_output_dir",
+        type=str,
+        help="Output directory for nf-core/ampliseq results",
     )
 
     args = parser.parse_args()
