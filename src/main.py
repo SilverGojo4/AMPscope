@@ -31,6 +31,10 @@ SUPPORTED_STAGES = {
         "title": "Resolve missing AMP TaxIDs via BLAST alignment",
         "import_path": "src.data.dbAMP.resolve_taxid_by_blast.run_resolve_taxid_by_blast",
     },
+    "microbiome_composition": {
+        "title": "Analyze 16S microbiome composition with nf-core/ampliseq",
+        "import_path": "src.analysis.HMP2.microbiome_composition.run_microbiome_composition",
+    },
 }
 
 
@@ -212,6 +216,69 @@ def main():
         type=int,
         default=2,
         help="Maximum UniProt Protein Existence (PE) level to keep (1-5). Use 1-2 for high confidence; set to 3-5 to relax; set to -1 to disable.",
+    )
+
+    # -------------------- Microbiome Composition Parameters --------------------
+    parser.add_argument(
+        "--microbiome_input_csv",
+        type=str,
+        help="Path to the input sample sheet CSV for nf-core/ampliseq",
+    )
+    parser.add_argument(
+        "--microbiome_metadata",
+        type=str,
+        help="Path to the sample metadata TSV file",
+    )
+    parser.add_argument(
+        "--microbiome_silva_train",
+        type=str,
+        help="Path to custom SILVA training set FASTA file",
+    )
+    parser.add_argument(
+        "--microbiome_silva_species",
+        type=str,
+        help="Path to custom SILVA species FASTA file",
+    )
+    parser.add_argument(
+        "--microbiome_output_dir",
+        type=str,
+        help="Output directory for nf-core/ampliseq results",
+    )
+    parser.add_argument(
+        "--microbiome_dada2_threads",
+        type=int,
+        default=4,
+        help="Number of threads for DADA2 step in nf-core/ampliseq (default: 4)",
+    )
+    parser.add_argument(
+        "--microbiome_fastp_threads",
+        type=int,
+        default=4,
+        help="Number of threads for Fastp pre-processing (default: 4)",
+    )
+    parser.add_argument(
+        "--microbiome_cutadapt_threads",
+        type=int,
+        default=4,
+        help="Number of threads for Cutadapt trimming (default: 4)",
+    )
+    parser.add_argument(
+        "--microbiome_max_cpus",
+        type=int,
+        default=8,
+        help="Maximum number of CPUs Nextflow can use for the entire workflow (default: 8)",
+    )
+    parser.add_argument(
+        "--microbiome_max_memory",
+        type=str,
+        default="16.GB",
+        help="Maximum memory available to the pipeline (e.g., '16.GB') (default: 16.GB)",
+    )
+    parser.add_argument(
+        "--microbiome_max_time",
+        type=str,
+        default="24.h",
+        help="Maximum execution time for the pipeline (e.g., '24.h') (default: 24.h)",
     )
 
     args = parser.parse_args()

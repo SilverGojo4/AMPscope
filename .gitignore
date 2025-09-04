@@ -48,3 +48,10 @@ data/raw
 
 # Ignore Jupyter Notebook Checkpoints
 notebooks/eda
+
+# Ignore Nextflow runtime files and folders
+.nextflow/
+work/
+
+# Ignore experiment outputs but keep configs and scripts
+experiments/HMP2/*
