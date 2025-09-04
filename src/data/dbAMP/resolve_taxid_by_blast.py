@@ -22,7 +22,6 @@ from ete3 import NCBITaxa
 # ============================== Project Root Path Setup ==============================
 BASE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
 LOGGING_PATH = os.path.join(BASE_PATH, "src/utils/logging_toolkit/src/python")
-print(BASE_PATH)
 
 # Fix Python Path
 if BASE_PATH not in sys.path:
