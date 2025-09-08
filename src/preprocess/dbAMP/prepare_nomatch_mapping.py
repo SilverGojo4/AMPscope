@@ -29,7 +29,7 @@ if SRC_PATH not in sys.path:
 from src.data.dbAMP.resolve_taxid_by_blast import get_taxonomy_lineage_from_name
 
 # Local AMPscope utility modules
-from utils.io_utils import directory_exists, file_exists
+from utils.io_utils import directory_exists, file_exists, load_dataframe_by_columns
 
 
 # ============================== Main Processing Function ==============================
@@ -129,11 +129,11 @@ def resolve_manual_taxonomy(
         df_map["TaxID_Count"], errors="coerce"
     ).astype("Int64")
 
-    # Save result to TSV
+    # Save result to CSV
     df_map.to_csv(output_csv, index=False)
 
-    # Load AMP CSV
-    df_amp = pd.read_csv(amp_input_csv)
+    # Load AMP CSV via io_utils loader (keep all columns; validates existence)
+    df_amp = load_dataframe_by_columns(amp_input_csv, required_columns=None)
 
     # Rename df_map columns to avoid suffix ambiguity
     df_map_renamed = df_map.rename(
@@ -179,9 +179,10 @@ def resolve_manual_taxonomy(
             "TaxID_Count_mapped",
         ],
         inplace=True,
+        errors="ignore",
     )
 
-    # Replace 'Unknown' values in Tax with 'NA'
+    # Replace 'Unknown' values in Tax with NaN
     df_amp["Tax"] = df_amp["Tax"].replace("Unknown", np.nan)
 
     # Save result
