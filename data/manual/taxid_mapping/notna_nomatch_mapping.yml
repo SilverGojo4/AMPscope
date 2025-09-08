@@ -1,0 +1,260 @@
+# data/manual/taxid_mapping/notna_nomatch_mapping.yml
+A: Unknown
+A20G: Unknown
+A23I: Unknown
+AP21_EISFO: Unknown
+Algae: Unknown
+"Amolops g": Amolops
+An: Animalia
+Ani: Animalia
+Anim: Animalia
+Animal: Animalia
+Animali: Animalia
+"Animalia,": Animalia
+"Animalia,A": Animalia
+"Animalia,Amp": Amphibia
+"Animalia,Amphibian": Amphibia
+"Animalia,Amphibians": Amphibia
+"Animalia,Annelids (Clitellata)": Clitellata
+"Animalia,Annelids (Polychaeta)": Polychaeta
+"Animalia,Anthozoans": Anthozoa
+"Animalia,Arac": Arachnida
+"Animalia,Arachnids": Arachnida
+"Animalia,Arthropoda,Arachnida,Scorpiones,Buthidae,Mesobuthus,M. eupeus": Mesobuthus eupeus
+"Animalia,Arthropoda,Insecta,Lepidoptera,Bombycidae,Bombyx,B. mori": Bombyx mori
+"Animalia,Centipedes": Chilopoda
+"Animalia,Chordata,Amphibia,Anura,Bombinatoridae,Bombina,B. orientalis": Bombina orientalis
+"Animalia,Chordata,Amphibia,Anura,Hylidae,Phyllomedusa,P. hypochondrialis": Phyllomedusa hypochondrialis
+"Animalia,Chordata,Amphibia,Anura,Ranidae,Pelophylax,P. lessonae,P. ridibundus": Pelophylax lessonae/ridibundus
+"Animalia,Crustaceans": Crustacea
+"Animalia,Crustaceans  (Malacostraca)": Malacostraca
+"Animalia,Crustaceans (Malacostraca)": Malacostraca
+"Animalia,Hydrozoans": Hydrozoa
+"Animalia,I": Animalia
+"Animalia,Inse": Insecta
+"Animalia,Insect": Insecta
+"Animalia,Insects": Insecta
+"Animalia,Ma": Mammalia
+"Animalia,Mam": Mammalia
+"Animalia,Mamma": Mammalia
+"Animalia,Mammals": Mammalia
+"Animalia,Merostomata ( Horseshoe crabs )": Merostomata
+"Animalia,Mollusa": Mollusca
+"Animalia,Molluscs  (Bivalvia)": Bivalvia
+"Animalia,Molluscs (Bivalvia)": Bivalvia
+"Animalia,Molluscs (Gastropoda)": Gastropoda
+"Animalia,Nematode": Nematoda
+"Animalia,Pisces": Pisces
+"Animalia,Reptile": Reptilia
+"Animalia,Reptiles": Reptilia
+"Animalia,Sea snail": Gastropoda
+"Animalia,nematode": Nematoda
+Antimicrobial peptide OEP3121: Unknown
+"Archaea,Unclassified,Euryarchaeota,Halobacteria,Natrialbales,Natrialbaceae,Natrinema,Natrinema sp. J7": Natrinema sp. J7
+Arth: Arthropoda
+Arthro: Arthropoda
+Arthrop: Arthropoda
+"Arthropoda,Agelaia pallipes pallipes": Agelaia pallipes pallipes
+"Arthropoda,Buthus martensi": Buthus martensi
+"Arthropoda,D": Arthropoda
+"Arthropoda,Eburodacrys quadridens": Eburodacrys quadridens
+"Arthropoda,Lachesana tarabaevis": Lachesana tarabaevis
+"Arthropoda,Lycosa singorensis": Lycosa singorensis
+"Arthropoda,Macrobrachium rosenbergi": Macrobrachium rosenbergii
+"Arthropoda,Opistophthalmus carinatu": Opistophthalmus carinatus
+"Arthropoda,Oxyopes kitabensis": Oxyopes kitabensis
+"Arthropoda,Paederus dermatitis": Paederus dermatitis
+"Arthropoda,Panulirus genus": Panulirus
+"Arthropoda,Plutella xylostella L": Plutella xylostella
+"Arthropoda,Polistes dominulus": Polistes dominulus
+"Arthropoda,Pseudopolybia vespiceps testacea": Pseudopolybia vespiceps testacea
+"Arthropoda,Vaejovis mexic": Vaejovis mexicanus
+"Arthropoda,Ve": Arthropoda
+Ascaph: Ascaphus
+"Bacteria,Firmicutes,Bacilli,Bacillales,Staphylococcaceae,Staphylococcus,S. hyicus": Staphylococcus hyicus
+"Bacteria,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,S. mutans": Streptococcus mutans
+"Bacteria,Unclassified,Actinobacteria,Actinobacteria,Corynebacteriales,Mycobacteriaceae,Mycobacteriu": Mycobacterium
+"Bacteria,Unclassified,Aquificae,Aquificae,Unclassified,Unclassified,Unclassified,uncultured Aquificae bacterium": Aquificae bacterium
+"Bacteria,Unclassified,Bacteroidetes,Bacteroidia,Bacteroidales,Bacteroidacea": Bacteroidaceae
+"Bacteria,Unclassified,Bacteroidetes,Bacteroidia,Bacteroidales,Marinilabiliaceae,Marinilabilia,Marinilabilia sal": Marinilabilia
+"Bacteria,Unclassified,Bacteroidetes,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella multisaccharivorax": Prevotella multisaccharivorax
+"Bacteria,Unclassified,Bacteroidetes,Cytophagia,Cytophagales,Cyclobacteriaceae,Indibacte": Indibacter
+"Bacteria,Unclassified,Bacteroidetes,Flavobacteriia,Fla": Flavobacteriia
+"Bacteria,Unclassified,Bacteroidetes,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Flav": Flavobacterium
+"Bacteria,Unclassified,Bacteroidetes,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Flavobacterium,Flavobacte": Flavobacterium
+"Bacteria,Unclassified,Bacteroidetes,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Formosa,Formosa sp. AK20": Formosa sp. AK20
+"Bacteria,Unclassified,Bacteroidetes,Sphingobacteriia,Sphingobacteriales,Chitinophagacea": Chitinophagaceae
+"Bacteria,Unclassified,Cyanobacteria,Unclassified,Chroococcales,Unclassified,Cyanothece,Cyanothece sp. ATCC 5114": Cyanothece sp. ATCC 5114
+"Bacteria,Unclassified,Cyanobacteria,Unclassified,Prochlorales,Prochloraceae,Prochloron,uncultured Prochloron sp": Prochloron sp.
+"Bacteria,Unclassified,Firmicutes,Bacilli,Bacillales,Planococcaceae,Kurthia,Kurthia sp. JC8E": Kurthia sp. JC8E
+"Bacteria,Unclassified,Firmicutes,Bacilli,Bacillales,Staphylococcaceae,Staphylococcus,Staphylococcus e": Staphylococcus
+"Bacteria,Unclassified,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,E": Enterococcus
+"Bacteria,Unclassified,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus sp": Enterococcus sp.
+"Bacteria,Unclassified,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus plantarum": Lactobacillus plantarum
+"Bacteria,Unclassified,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Streptococc": Streptococcus
+"Bacteria,Unclassified,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Streptococc": Streptococcus
+"Bacteria,Unclassified,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Streptococcus ictalur": Streptococcus ictaluri
+"Bacteria,Unclassified,Proteobacteria,Alphaproteobacteria,Rhizobiales,Bradyrhizobiaceae,Bradyrhizobium,Bradyrhizo": Bradyrhizobium
+"Bacteria,Unclassified,Proteobacteria,Alphaproteobacteria,Rhizobiales,Phyllobacteriaceae,Mesorhizobi": Mesorhizobium
+"Bacteria,Unclassified,Proteobacteria,Alphaproteobacteria,Rhizobiales,Phyllobacteriaceae,Mesorhizobium,Mesorhizo": Mesorhizobium
+"Bacteria,Unclassified,Proteobacteria,Alphaproteobacteria,Rhizobiales,Phyllobacteriaceae,Mesorhizobium,Mesorhizobium metallidura": Mesorhizobium metallidurans
+"Bacteria,Unclassified,Proteobacteria,Betaproteobacteria,Burkholderiales,Alcaligenaceae,Achromobacter,Achromobact": Achromobacter
+"Bacteria,Unclassified,Proteobacteria,Betaproteobacteria,Burkholderiales,Alcaligenaceae,Achromobacter,Achromobacter piecha": Achromobacter piechaudii
+"Bacteria,Unclassified,Proteobacteria,Betaproteobacteria,Burkholderiales,Burkholderiacea": Burkholderiaceae
+"Bacteria,Unclassified,Proteobacteria,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Cupriavidus,Cupriavidu": Cupriavidus
+"Bacteria,Unclassified,Proteobacteria,Betaproteobacteria,Burkholderiales,Unclassified,Un": Burkholderiales
+"Bacteria,Unclassified,Proteobacteria,Betaproteobacteria,Burkholderiales,Unclassified,Unclassified,Burkholderial": Burkholderiales
+"Bacteria,Unclassified,Proteobacteria,Betaproteobacteria,Unclassified,Unclassified,Unclassified,beta p": Betaproteobacteria
+"Bacteria,Unclassified,Proteobacteria,Betaproteobacteria,Unclassified,Unclassified,Unclassified,beta proteoba": Betaproteobacteria
+"Bacteria,Unclassified,Proteobacteria,Deltaproteobacteria,Desulfobacterales,Desulfobacteraceae,Desulfobac": Desulfobacter
+"Bacteria,Unclassified,Proteobacteria,Deltaproteobacteria,Desulfobacterales,Desulfobacteraceae,Desulfobacterium,": Desulfobacterium
+"Bacteria,Unclassified,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Bilophila,Bilop": Bilophila
+"Bacteria,Unclassified,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Desulfovibrio,Desulfovibrio gigas": Desulfovibrio gigas
+"Bacteria,Unclassified,Proteobacteria,Deltaproteobacteria,Unclassified,Unclassified,Unclassified,SAR324 cluster bacterium JCVI-SC A": SAR324 cluster bacterium JCVI-SC A
+"Bacteria,Unclassified,Proteobacteria,Gammaproteobacteria,Ente": Enterobacteriaceae
+"Bacteria,Unclassified,Proteobacteria,Gammaproteobacteria,Enterobacteriales,Enterobacteri": Enterobacteriaceae
+"Bacteria,Unclassified,Proteobacteria,Gammaproteobacteria,Enterobacteriales,Enterobacteriaceae,Serratia,Ser": Serratia
+"Bacteria,Unclassified,Proteobacteria,Gammaproteobacteria,Oceanospirillales,Oceanospirillaceae,Neptuniibacter,Neptuniibacter caesarien": Neptuniibacter caesariensis
+"Bacteria,Unclassified,Proteobacteria,Gammaproteobacteria,Pseudomonadales,Moraxellaceae,Acinetobacter,": Acinetobacter
+"Bacteria,Unclassified,Proteobacteria,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas sp. S9&": Pseudomonas sp. S9
+"Bacteria,Unclassified,Proteobacteria,Gammaproteobacteria,Unclassified,Unclassified,Unclassif": Gammaproteobacteria
+"Bacteria,Unclassified,Synergistetes,Synergistia,Synergistales,Synerg": Synergistales
+EP5-1: Unknown
+Eisenia foetida (Common brandling worm) (Common dung-worm): Eisenia fetida
+"Eukaryota,Fungi,Basidiomycota,Dacrymycetes,Dacrymycetales,Dacrymycetaceae,Dacryopinax,Dacryopinax sp. DJM-731 SS1": Dacryopinax sp. DJM-731 SS1
+"Eukaryota,Metazoa,Arthropoda,Insecta,Hymenoptera,Formicidae,Acromyrmex,Acromyrmex echina": Acromyrmex echinatior
+"Eukaryota,Metazoa,Chordata,Amphibia,Anura,Dicroglossidae,Fejervarya,Fejerva": Fejervarya
+"Eukaryota,Metazoa,Chordata,Amphibia,Anura,Hylidae,Litoria,Litoria aurea": Litoria aurea
+"Eukaryota,Metazoa,Chordata,Amphibia,Anura,Hylidae,Litoria,Litoria caerulea": Litoria caerulea
+"Eukaryota,Metazoa,Chordata,Amphibia,Anura,Hylidae,Litoria,Litoria chloris": Litoria chloris
+"Eukaryota,Metazoa,Chordata,Amphibia,Anura,Hylidae,Litoria,Litoria citropa": Litoria citropa
+"Eukaryota,Metazoa,Chordata,Amphibia,Anura,Hylidae,Litoria,Litoria genimaculata": Litoria genimaculata
+"Eukaryota,Metazoa,Chordata,Amphibia,Anura,Hylidae,Litoria,Litoria gilleni": Litoria gilleni
+"Eukaryota,Metazoa,Chordata,Amphibia,Anura,Hylidae,Litoria,Litoria raniformis": Litoria raniformis
+"Eukaryota,Metazoa,Chordata,Amphibia,Anura,Hylidae,Litoria,Litoria splendida": Litoria splendida
+"Eukaryota,Metazoa,Chordata,Amphibia,Anura,Hyperoliidae,Kassina,Kassina maculata": Kassina maculata
+"Eukaryota,Metazoa,Chordata,Aves,Galliformes,Phas": Phasianidae
+"Eukaryota,Metazoa,Chordata,Cr": Craniata
+"Eukaryota,Metazoa,Chordata,Craniata,Ve": Vertebrata
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebr": Vertebrata
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebra": Vertebrata
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,": Vertebrata
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,E": Vertebrata
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Eu": Euteleostomi
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Eutele": Euteleostomi
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleo": Euteleostomi
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Ac": Actinopterygii
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Actinopterygii,N": Actinopterygii
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amph": Amphibia
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphi": Amphibia
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphibia,B": Batrachia
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphibia,Batrachia,": Batrachia
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphibia,Batrachia,An": Anura
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphibia,Batrachia,Anura,Bombinatoridae,Bombina.Eukaryota,Metazoa,Chordata,Craniata,V": Bombina
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphibia,Batrachia,Anura,N": Neobatrachia
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphibia,Batrachia,Anura,Ne": Neobatrachia
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphibia,Batrachia,Anura,Neoba": Neobatrachia
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphibia,Batrachia,Anura,Neobatrach": Neobatrachia
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphibia,Batrachia,Anura,Neobatrachia,": Neobatrachia
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphibia,Batrachia,Anura,Neobatrachia,Hylo": Hylobatrachia
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphibia,Batrachia,Anura,Neobatrachia,Ranoidea,Ranid": Ranidae
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Amphibia,Batrachia,Anura,Pipoidea,Pipidae,Xenopodinae,Xenopus,S": Xenopus
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Arche": Archelosauria
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Archelosauria,Arc": Archelosauria
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Lepidosauria,Squamata,Bifurcata,Unidentata,Epis": Unknown
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euar": Euarchontoglires
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarc": Euarchontoglires
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarcho": Euarchontoglires
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchont": Euarchontoglires
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchonto": Euarchontoglires
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontogl": Euarchontoglires
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Glires,Rodentia,": Rodentia
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,": Primates
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,H": Haplorhini
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Hapl": Haplorhini
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplor": Haplorhini
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplorr": Haplorhini
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplorrh": Haplorhini
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,C": Carnivora
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Carnivora,Caniformia,Phoc": Phocidae
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Cetartiod": Cetartiodactyla
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Cetartioda": Cetartiodactyla
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Cetartiodac": Cetartiodactyla
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Cetartiodacty": Cetartiodactyla
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Cetartiodactyla,Ruminantia,Pecora,": Pecora
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Cetartiodactyla,Ruminantia,Pecora,Bovidae,Bovinae,Bos,Bos hybrids": Bos hybrids
+"Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Chiroptera,Microchiropte": Microchiroptera
+"Eukaryota,Metazoa,Chordata,Mammalia,Primates,Cercopitheci": Cercopithecidae
+"Eukaryota,Metazoa,Chordata,Mammalia,Primates,Cercopithecid": Cercopithecidae
+"Eukaryota,Metazoa,Chordata,Mammalia,Primates,Cercopithecidae,": Cercopithecidae
+"Eukaryota,Metazoa,Chordata,Mammalia,Rodentia,Muridae,Mus,Mus sp": Mus sp.
+"Eukaryota,Metazoa,Chordata,Unclassified,Squamata,Viperidae,Calloselasma,Cal": Calloselasma
+"Eukaryota,Metazoa,Ecdysozoa,Arthropoda,Hexapoda,Insecta,Pterygota,Neoptera,Holometab": Holometabola
+"Eukaryota,Metazoa,Ecdysozoa,Arthropoda,Hexapoda,Insecta,Pterygota,Neoptera,Holometabol": Holometabola
+"Eukaryota,Metazoa,Ecdysozoa,Arthropoda,Hexapoda,Insecta,Pterygota,Neoptera,Holometabola,Hymenoptera,A": Hymenoptera
+"Eukaryota,Metazoa,Mollusca,Gastropoda,Unclassified,Achatinidae,Achatina,Achatina fulica": Achatina fulica
+"Eukaryota,Metazoa,Nematoda,Chromadorea,Rhabditida,Rhabditidae,Caenorhabditis,Caenorhabdit": Caenorhabditis
+"Eukaryota,Unclassified,Unclassified,Bangiophyceae,Cyanidiales,Cyanidiaceae,Galdieria,Gald": Galdieria
+"Eukaryota,Unclassified,Unclassified,Oligohymenophorea,Hymenostomatida,Unclassified,Ichthyophthirius,Ichthyophth": Ichthyophthirius
+"Eukaryota,Viridiplan": Viridiplantae
+"Eukaryota,Viridiplantae,Chlorophyta,Mamiellophyceae,Mamiellales,Mamiellaceae,Micromonas,Micromonas sp. RCC": Micromonas sp. RCC
+"Eukaryota,Viridiplantae,Chlorophyta,Mamiellophyceae,Mamiellales,Mamiellaceae,Micromonas,Micromonas sp. RCC299": Micromonas sp. RCC299
+"Eukaryota,Viridiplantae,Streptophyta,Embryophyta,Tracheophyta,Sp": Spermatophyta
+"Eukaryota,Viridiplantae,Streptophyta,Embryophyta,Tracheophyta,Spe": Spermatophyta
+"Eukaryota,Viridiplantae,Streptophyta,Embryophyta,Tracheophyta,Spermatophyta,Magnoliophyta,Liliopsida,Poales,Poaceae,PACMAD clade,Panicoideae,Andropogonodae,Andropogoneae,Saccharinae,Saccharum,Saccharum officinarum complex": Saccharum officinarum complex
+"Eukaryota,Viridiplantae,Streptophyta,Embryophyta,Tracheophyta,Spermatophyta,Magnoliophyta,eudicotyledons,Gunneridae,Pentapetalae,rosids,fabids,Fabales,Fabaceae,Papilionoideae,Phaseoleae,Glycine,Soja": Glycine soja
+"Eukaryota,Viridiplantae,Streptophyta,Liliopsida,P": Poales
+"Eukaryota,Viridiplantae,Streptophyta,Liliopsida,Poales,Po": Poaceae
+"Eukaryota,Viridiplantae,Streptophyta,Liliopsida,Poales,Poacea": Poaceae
+"Eukaryota,Viridiplantae,Streptophyta,Unclassified,": Unknown
+"Eukaryota,Viridiplantae,Streptophyta,Unclassified,Brassicales,Br": Brassicaceae
+"Eukaryota,Viridiplantae,Streptophyta,Unclassified,Brassicales,Bra": Brassicaceae
+"Eukaryota,Viridiplantae,Streptophyta,Unclassified,Brassicales,Brassicaceae,Orycho": Orychophragmus
+"Eukaryota,Viridiplantae,Streptophyta,Unclassified,F": Unknown
+"Eukaryota,Viridiplantae,Streptophyta,Unclassified,Fabales,Fabaceae,Clitoria,Cl": Clitoria
+"Eukaryota,Viridiplantae,Streptophyta,Unclassified,Fabales,Fabaceae,Clitoria,Clit": Clitoria
+"Eukaryota,Viridiplantae,Streptophyta,Unclassified,Fagales,Fagaceae,Castanea,Casta": Castanea
+"Eukaryota,Viridiplantae,Streptophyta,Unclassified,G": Unknown
+"Eukaryota,Viridiplantae,Streptophyta,Unclassified,Gentianales,Rubiaceae,Oldenland": Oldenlandia
+"Eukaryota,Viridiplantae,Streptophyta,Unclassified,M": Unknown
+"Eukaryota,Viridiplantae,Streptophyta,Unclassified,Malpighi": Malpighiales
+F19L: Unknown
+G20A: Unknown
+Hylarana palustris: Hylarana palustris
+Kassina maculata: Kassina maculata
+Lithobates calamitans: Lithobates clamitans
+Litoria aurea: Litoria aurea
+Litoria caerulea: Litoria caerulea
+Litoria chloris: Litoria chloris
+Litoria citropa: Litoria citropa
+Litoria eucnemis: Litoria eucnemis
+Litoria genimaculata: Litoria genimaculata
+Litoria gilleni: Litoria gilleni
+Litoria gracilenta: Litoria gracilenta
+Litoria raniformis: Litoria raniformis
+Litoria splendida: Litoria splendida
+"Mollusca,Achatina fulica": Achatina fulica
+Monera: Monera
+"Nematoda,Lycosa singorensis": Lycosa singorensis
+Plantae: Plantae
+"Plantae,Algae": Algae
+"Plantae,Angiosperms": Angiosperms
+"Plantae,Mammals": Unknown
+"Plantae,Plantae": Plantae
+"Prokaryotes,Bacteria,Bacteriocin": Bacteriocin
+"Unclassified,Unclassified,Unclassified,Unclassified,Unc": Unknown
+"Unclassified,Unclassified,Unclassified,Unclassified,Unclassified,Unclassified,Unclassified,Expression vect": Unknown
+"Unclassified,Unclassified,Unclassified,Unclassified,Unclassified,Unclassified,Unclassified,synthetic const": Unknown
+"Unclassified,Unclassified,Unclassified,Unclassified,Unclassified,Unclassified,Unclassified,synthetic construct&": Unknown
+"Unclassified,Unclassified,Unclassified,Unclassified,Unclassified,Unclassified,Unclassified,unidentified cloning": Unknown
+V17I: Unknown
+"Viridiplantae,Crustaceans (Malacostraca)": Unknown
+"Viridiplantae,Mammals": Unknown
+Virus: Virus
+"Viruses,Unclassified,Unclassified,Unclassified,Caudovirales,Siphoviridae,Unclassified,Brochoth": Brochothrix phage?
+"Viruses,Unclassified,Unclassified,Unclassified,Unclassifi": Unknown
+"Viruses,Unclassified,Unclassified,Unclassified,Unclassified,Retroviridae,Lentivirus,Human immunodeficiency viru": Human immunodeficiency virus
+"Viruses,dsDNA viruses,no RNA stage,Caudovirales,Siphoviridae": Siphoviridae
+"Viruses,ssRNA viruses,ssRNA negative-strand viruses,Orthomyxoviridae,Influenzavirus A": Influenza A virus
+"Viruses,ssRNA viruses,ssRNA negative-strand viruses,Orthomyxoviridae,Influenzavirus B": Influenza B virus
+animals): Unknown
