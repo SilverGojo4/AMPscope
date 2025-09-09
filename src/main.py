@@ -39,6 +39,10 @@ SUPPORTED_STAGES = {
         "title": "Merge checked taxonomy tables and append BLAST-derived results",
         "import_path": "src.preprocess.dbAMP.merge_checked_taxonomies.run_merge_checked_taxonomies",
     },
+    "clean_targets": {
+        "title": "Clean AMP Targets text to long table",
+        "import_path": "src.preprocess.dbAMP.clean_targets.run_clean_targets",
+    },
     "microbiome_composition": {
         "title": "Analyze 16S microbiome composition with nf-core/ampliseq",
         "import_path": "src.analysis.HMP2.microbiome_composition.run_microbiome_composition",
@@ -274,6 +278,20 @@ def main():
         "--merge_output_path",
         type=str,
         help="Path to save merged CSV (checked-only). Final '+_with_blast' is auto-saved next to it. (default: data/processed/dbAMP/checked_taxonomies.csv)",
+    )
+
+    # -------------------- Clean Targets Parameters --------------------
+    parser.add_argument(
+        "--targets_input_path",
+        type=str,
+        help="Path to the AMP table (Excel/CSV/TSV) with columns [dbAMP_ID, Targets] "
+        "(default: data/raw/dbAMP/dbAMP3_pepinfo.xlsx)",
+    )
+    parser.add_argument(
+        "--targets_output_csv",
+        type=str,
+        help="Path to save the cleaned long-format targets CSV "
+        "(default: data/processed/dbAMP/targets_clean.csv)",
     )
 
     # -------------------- Microbiome Composition Parameters --------------------
