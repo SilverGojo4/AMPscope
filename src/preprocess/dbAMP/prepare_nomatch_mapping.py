@@ -36,7 +36,7 @@ from utils.io_utils import directory_exists, file_exists, load_dataframe_by_colu
 from utils.log_utils import get_pipeline_completion_message, get_task_completion_message
 
 
-# ============================== Main Processing Function ==============================
+# ============================== Custom Functions ==============================
 def resolve_manual_taxonomy(
     input_yaml: str,
     output_csv: str,

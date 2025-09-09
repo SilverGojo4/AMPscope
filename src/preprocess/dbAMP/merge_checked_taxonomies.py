@@ -31,7 +31,7 @@ from utils.io_utils import directory_exists, file_exists, load_dataframe_by_colu
 from utils.log_utils import get_pipeline_completion_message, get_task_completion_message
 
 
-# ============================== Main Merge Function ==============================
+# ============================== Custom Functions ==============================
 def merge_checked_tables(
     multi_path: str,
     single_path: str,
@@ -73,8 +73,8 @@ def merge_checked_tables(
 
     try:
         # Required columns per source
-        req_checked_cols = ["dbAMP_ID", "Tax_Checked", "Targets", "Seq"]
-        req_blast_cols = ["dbAMP_ID", "Tax", "Targets", "Seq"]
+        req_checked_cols = ["dbAMP_ID", "Tax_Checked", "Seq"]
+        req_blast_cols = ["dbAMP_ID", "Tax", "Seq"]
 
         # Load each table using io_utils loader (enforces required columns & handles csv/tsv/xlsx)
         df_multi = load_dataframe_by_columns(
@@ -97,7 +97,7 @@ def merge_checked_tables(
         )
 
         # Drop rows with missing Tax and enforce final column order
-        final_cols = ["dbAMP_ID", "Tax", "Targets", "Seq"]
+        final_cols = ["dbAMP_ID", "Tax", "Seq"]
         df_merged = df_merged.dropna(subset=["Tax"])[final_cols]
         after_drop = df_merged.shape[0]
 

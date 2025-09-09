@@ -83,7 +83,7 @@ def prepare_fasta_for_blast(
         fasta_output_path = os.path.join(step1_dir, "na.fasta")
 
         # Load dbAMP dataset
-        required_columns = ["dbAMP_ID", "Tax", "Targets", "Seq"]
+        required_columns = ["dbAMP_ID", "Tax", "Seq"]
         df = load_dataframe_by_columns(
             file_path=input_path, required_columns=required_columns, has_header=True
         )
@@ -1150,7 +1150,7 @@ def integrate_amp_taxonomy_info(output_dir: str, logger: CustomLogger) -> None:
         )
 
         # Log save location
-        df_final = df_merged[["dbAMP_ID", "Tax", "Targets", "Seq"]]
+        df_final = df_merged[["dbAMP_ID", "Tax", "Seq"]]
         logger.log_with_borders(
             level=logging.INFO,
             message=f"Number of merged AMP entries: {df_final.shape[0]}",
