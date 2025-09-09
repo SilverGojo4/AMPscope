@@ -29,7 +29,15 @@ from setup_logging import setup_logging
 SUPPORTED_STAGES = {
     "resolve_taxid_by_blast": {
         "title": "Resolve missing AMP TaxIDs via BLAST alignment",
-        "import_path": "src.data.dbAMP.resolve_taxid_by_blast.run_resolve_taxid_by_blast",
+        "import_path": "src.preprocess.dbAMP.resolve_taxid_by_blast.run_resolve_taxid_by_blast",
+    },
+    "taxonomy_nomatch_mapping": {
+        "title": "Fill unmatched taxonomy via manual mapping + NCBI",
+        "import_path": "src.preprocess.dbAMP.prepare_nomatch_mapping.run_prepare_nomatch_mapping",
+    },
+    "merge_checked_taxonomies": {
+        "title": "Merge checked taxonomy tables and append BLAST-derived results",
+        "import_path": "src.preprocess.dbAMP.merge_checked_taxonomies.run_merge_checked_taxonomies",
     },
     "microbiome_composition": {
         "title": "Analyze 16S microbiome composition with nf-core/ampliseq",
@@ -96,6 +104,7 @@ def dispatch_stage(args: argparse.Namespace) -> None:
     extra_args.pop("stage", None)
     extra_args.pop("log_path", None)
     stage_func(base_path=BASE_PATH, logger=logger, **extra_args)
+    logger.add_spacer(level=logging.INFO, lines=1)
 
 
 # ============================== Main Entry ==============================
@@ -216,6 +225,55 @@ def main():
         type=int,
         default=2,
         help="Maximum UniProt Protein Existence (PE) level to keep (1-5). Use 1-2 for high confidence; set to 3-5 to relax; set to -1 to disable.",
+    )
+
+    # -------------------- Taxonomy Nomatch Mapping Parameters --------------------
+    parser.add_argument(
+        "--nomatch_input_yaml",
+        type=str,
+        help="Path to YAML of manual taxonomy mappings (default: data/manual/taxid_mapping/notna_nomatch_mapping.yml)",
+    )
+    parser.add_argument(
+        "--nomatch_output_csv",
+        type=str,
+        help="Path to save resolved mapping table CSV (default: data/processed/dbAMP/resolved_manual_taxonomy.csv)",
+    )
+    parser.add_argument(
+        "--nomatch_amp_input_csv",
+        type=str,
+        help="Path to AMP table to apply mapping (default: data/interim/resolve_taxid/02_tax_check/notna_nomatch.csv)",
+    )
+    parser.add_argument(
+        "--nomatch_amp_output_csv",
+        type=str,
+        help="Path to save AMP table with mapped taxonomy (default: data/interim/resolve_taxid/02_tax_check/notna_nomatch_filled.csv)",
+    )
+
+    # -------------------- Merge Checked Taxonomies Parameters --------------------
+    parser.add_argument(
+        "--merge_multi_path",
+        type=str,
+        help="Path to notna_multi.csv (default: data/interim/resolve_taxid/02_tax_check/notna_multi.csv)",
+    )
+    parser.add_argument(
+        "--merge_single_path",
+        type=str,
+        help="Path to notna_single.csv (default: data/interim/resolve_taxid/02_tax_check/notna_single.csv)",
+    )
+    parser.add_argument(
+        "--merge_filled_path",
+        type=str,
+        help="Path to notna_nomatch_filled.csv (default: data/interim/resolve_taxid/02_tax_check/notna_nomatch_filled.csv)",
+    )
+    parser.add_argument(
+        "--merge_na_with_blast_path",
+        type=str,
+        help="Path to na_with_blast.csv (default: data/interim/blast/06_merge/na_with_blast.csv)",
+    )
+    parser.add_argument(
+        "--merge_output_path",
+        type=str,
+        help="Path to save merged CSV (checked-only). Final '+_with_blast' is auto-saved next to it. (default: data/processed/dbAMP/checked_taxonomies.csv)",
     )
 
     # -------------------- Microbiome Composition Parameters --------------------

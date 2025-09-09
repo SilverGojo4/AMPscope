@@ -65,7 +65,7 @@ def prepare_fasta_for_blast(
         df_tax_na: DataFrame with missing TaxID but valid sequences.
         df_tax_notna: DataFrame with valid TaxID entries.
     """
-    logger.info("/ Task: Load dbAMP dataset and split by TaxID presence.")
+    logger.info("/ Task: Load dbAMP dataset and split by TaxID presence")
     logger.add_divider(level=logging.INFO, length=120, border="+", fill="-")
 
     # Start timing
@@ -306,7 +306,7 @@ def annotate_taxonomy_with_ncbi(output_dir: str, logger: CustomLogger) -> None:
         df_amp = split_and_clean_tax_df(df_amp)
 
         # Initialize in-memory cache to avoid redundant NCBI lookups
-        taxonomy_cache: dict[str, tuple[str, list[int], int]] = {}
+        taxonomy_cache: dict[str, Tuple[Optional[str], Optional[str], int]] = {}
 
         def cached_check_taxonomy(x: str) -> pd.Series:
             """
@@ -1192,6 +1192,8 @@ def run_resolve_taxid_by_blast(base_path: str, logger: CustomLogger, **kwargs) -
         Project root path.
     logger : CustomLogger
         Logger instance for tracking progress.
+    **kwargs : dict
+        Optional overrides for input/output file paths.
 
     Returns
     -------
