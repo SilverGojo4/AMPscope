@@ -55,3 +55,6 @@ work/
 
 # Ignore experiment outputs but keep configs and scripts
 experiments/HMP2/*
+
+# Ignore BacDive credentials (local only)
+configs/bacdive.json

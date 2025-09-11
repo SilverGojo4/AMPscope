@@ -3,6 +3,7 @@
 I/O Utility Module
 """
 # ============================== Standard Library Imports ==============================
+import json
 import os
 from typing import List, Optional
 
@@ -151,3 +152,30 @@ def write_readme(
         if extra_info:
             for key, value in extra_info.items():
                 f.write(f"**{key}:** {value}\n")
+
+
+def load_json_config(file_path: str) -> dict:
+    """
+    Load a JSON configuration file and return its contents as a dictionary.
+
+    Parameters
+    ----------
+    file_path : str
+        Path to the JSON config file.
+
+    Returns
+    -------
+    dict
+        Dictionary containing the parsed JSON configuration.
+    """
+    # Check file exists
+    if not file_exists(file_path=file_path):
+        raise FileNotFoundError(f"Config file not found: '{file_path}'")
+
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            config = json.load(f)
+    except json.JSONDecodeError as exc:
+        raise ValueError(f"Invalid JSON in config file '{file_path}'") from exc
+
+    return config

@@ -1,4 +1,4 @@
-# pylint: disable=line-too-long, import-error, wrong-import-position, broad-exception-caught
+# pylint: disable=line-too-long, import-error, wrong-import-position, broad-exception-caught, too-many-statements
 """
 AMPscope - Project Main Entry Point
 
@@ -42,6 +42,10 @@ SUPPORTED_STAGES = {
     "clean_targets": {
         "title": "Clean AMP Targets text to long table",
         "import_path": "src.preprocess.dbAMP.clean_targets.run_clean_targets",
+    },
+    "targets_mapping": {
+        "title": "Resolve AMP targets via manual mapping + BacDive",
+        "import_path": "src.preprocess.dbAMP.resolve_targets_by_bacdive.run_prepare_targets_mapping",
     },
     "microbiome_composition": {
         "title": "Analyze 16S microbiome composition with nf-core/ampliseq",
@@ -292,6 +296,38 @@ def main():
         type=str,
         help="Path to save the cleaned long-format targets CSV "
         "(default: data/processed/dbAMP/targets_clean.csv)",
+    )
+
+    # -------------------- Prepare Targets Mapping Parameters --------------------
+    parser.add_argument(
+        "--targetsmap_input_yaml",
+        type=str,
+        help="Path to YAML of manual target mappings "
+        "(default: data/manual/targets_mapping/targets_mapping.yml)",
+    )
+    parser.add_argument(
+        "--targetsmap_bacdive_config",
+        type=str,
+        help="Path to BacDive JSON config with credentials "
+        "(default: configs/bacdive.json)",
+    )
+    parser.add_argument(
+        "--targetsmap_output_csv",
+        type=str,
+        help="Path to save resolved target mapping table "
+        "(default: data/processed/dbAMP/resolved_manual_targets.csv)",
+    )
+    parser.add_argument(
+        "--targetsmap_amp_input_csv",
+        type=str,
+        help="Path to AMP table to apply target mapping "
+        "(default: data/interim/resolve_targets/targets_clean.csv)",
+    )
+    parser.add_argument(
+        "--targetsmap_amp_output_csv",
+        type=str,
+        help="Path to save AMP table with resolved targets "
+        "(default: data/processed/dbAMP/targets_resolved.csv)",
     )
 
     # -------------------- Microbiome Composition Parameters --------------------
