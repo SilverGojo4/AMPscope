@@ -11,7 +11,7 @@ fi
 
 # Set paths
 PROJECT_DIR=$1
-LOG_FILE_MICRO="$PROJECT_DIR/logs/microbiome_pipeline.log"
+LOG_FILE="$PROJECT_DIR/logs/microbiome_pipeline.log"
 
 # Get the base directory of the Conda installation
 CONDA_BASE=$(conda info --base)
@@ -23,7 +23,7 @@ source "$CONDA_BASE/etc/profile.d/conda.sh"
 conda activate AMPscope
 
 # ===================== Step 1: Prepare metadata =====================
-rm -f "$LOG_FILE_MICRO"
+rm -f "$LOG_FILE"
 rm -f "$PROJECT_DIR/data/interim/nfcore_metadata.tsv"
 python "$PROJECT_DIR/src/preprocess/HMP2/prepare_metadata.py" \
   --input_csv "$PROJECT_DIR/data/raw/HMP2/hmp2_metadata_2018-08-20.csv" \
@@ -36,7 +36,7 @@ rm -rf "$PROJECT_DIR/work"
 rm -rf "$PROJECT_DIR/.nextflow"
 python "$PROJECT_DIR/src/main.py" \
   --stage microbiome_composition \
-  --log_path "$LOG_FILE_MICRO" \
+  --log_path "$LOG_FILE" \
   --microbiome_input_csv "$PROJECT_DIR/data/raw/HMP2/biopsy_16S/samplesheet.csv" \
   --microbiome_metadata "$PROJECT_DIR/data/interim/nfcore_metadata.tsv" \
   --microbiome_silva_train "$PROJECT_DIR/data/external/silva/nr99_v138.1_wSpecies_train_set.fa.gz" \

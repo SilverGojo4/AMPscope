@@ -11,7 +11,7 @@ fi
 
 # Set paths
 PROJECT_DIR=$1
-LOG_FILE_BLAST="$PROJECT_DIR/logs/resolve_taxid_by_blast.log"
+LOG_FILE="$PROJECT_DIR/logs/taxonomy_pipeline.log"
 
 # Get the base directory of the Conda installation
 CONDA_BASE=$(conda info --base)
@@ -23,11 +23,11 @@ source "$CONDA_BASE/etc/profile.d/conda.sh"
 conda activate AMPscope
 
 # ===================== Step 1: Run BLAST-based TaxID Resolution =====================
-rm -f "$LOG_FILE_BLAST"
+rm -f "$LOG_FILE"
 rm -rf "$PROJECT_DIR/data/interim/resolve_taxid"
 python "$PROJECT_DIR/src/main.py" \
   --stage resolve_taxid_by_blast \
-  --log_path "$LOG_FILE_BLAST" \
+  --log_path "$LOG_FILE" \
   --resolve_input_dbamp "$PROJECT_DIR/data/raw/dbAMP/dbAMP3_pepinfo.xlsx" \
   --resolve_output_dir "$PROJECT_DIR/data/interim/resolve_taxid" \
   --resource_dir "$PROJECT_DIR/data/external/uniprot" \
@@ -46,7 +46,7 @@ rm -rf "$PROJECT_DIR/data/processed/dbAMP/resolved_manual_taxonomy.csv"
 rm -rf "$PROJECT_DIR/data/interim/resolve_taxid/02_tax_check/notna_nomatch_filled.csv"
 python "$PROJECT_DIR/src/main.py" \
   --stage taxonomy_nomatch_mapping \
-  --log_path "$LOG_FILE_BLAST" \
+  --log_path "$LOG_FILE" \
   --nomatch_input_yaml "$PROJECT_DIR/data/manual/taxid_mapping/notna_nomatch_mapping.yml" \
   --nomatch_output_csv "$PROJECT_DIR/data/processed/dbAMP/resolved_manual_taxonomy.csv" \
   --nomatch_amp_input_csv "$PROJECT_DIR/data/interim/resolve_taxid/02_tax_check/notna_nomatch.csv" \
@@ -57,7 +57,7 @@ rm -rf "$PROJECT_DIR/data/processed/dbAMP/checked_taxonomies.csv"
 rm -rf "$PROJECT_DIR/data/processed/dbAMP/checked_taxonomies_with_blast.csv"
 python "$PROJECT_DIR/src/main.py" \
   --stage merge_checked_taxonomies \
-  --log_path "$LOG_FILE_BLAST" \
+  --log_path "$LOG_FILE" \
   --merge_multi_path "$PROJECT_DIR/data/interim/resolve_taxid/02_tax_check/notna_multi.csv" \
   --merge_single_path "$PROJECT_DIR/data/interim/resolve_taxid/02_tax_check/notna_single.csv" \
   --merge_filled_path "$PROJECT_DIR/data/interim/resolve_taxid/02_tax_check/notna_nomatch_filled.csv" \

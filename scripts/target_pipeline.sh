@@ -11,7 +11,7 @@ fi
 
 # Set paths
 PROJECT_DIR=$1
-LOG_FILE_BACDIVE="$PROJECT_DIR/logs/resolve_target_by_bacdive.log"
+LOG_FILE="$PROJECT_DIR/logs/target_pipeline.log"
 
 # Get the base directory of the Conda installation
 CONDA_BASE=$(conda info --base)
@@ -23,11 +23,11 @@ source "$CONDA_BASE/etc/profile.d/conda.sh"
 conda activate AMPscope
 
 # ===================== Step 1: Run BLAST-based TaxID Resolution =====================
-rm -f "$LOG_FILE_BACDIVE"
+rm -f "$LOG_FILE"
 rm -rf "$PROJECT_DIR/data/interim/resolve_targets"
 python "$PROJECT_DIR/src/main.py" \
   --stage clean_targets \
-  --log_path "$LOG_FILE_BACDIVE" \
+  --log_path "$LOG_FILE" \
   --targets_input_path "$PROJECT_DIR/data/raw/dbAMP/dbAMP3_pepinfo.xlsx" \
   --targets_output_csv "$PROJECT_DIR/data/interim/resolve_targets/targets_clean.csv"
 
@@ -36,7 +36,7 @@ rm -rf "$PROJECT_DIR/data/processed/dbAMP/resolved_manual_targets.csv"
 rm -rf "$PROJECT_DIR/data/processed/dbAMP/checked_targets.csv"
 python "$PROJECT_DIR/src/main.py" \
   --stage targets_mapping \
-  --log_path "$LOG_FILE_BACDIVE" \
+  --log_path "$LOG_FILE" \
   --targetsmap_input_yaml "$PROJECT_DIR/data/manual/targets_mapping/targets_mapping.yml" \
   --targetsmap_bacdive_config "$PROJECT_DIR/configs/bacdive.json" \
   --targetsmap_output_csv "$PROJECT_DIR/data/processed/dbAMP/resolved_manual_targets.csv" \
